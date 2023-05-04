@@ -46,7 +46,8 @@ img {
 
 @media only screen and (max-width: 800px) {
   .container {
-    border: none;
+    height: 100vh;
+    border-style: none;
   }
 
   section {
@@ -90,4 +91,46 @@ img {
 
 /* MOBILE SMALL SCREENS  */
 @media only screen and (max-width: 480px) {
+  .container {
+    border: none;
+    max-width: 400px;
+    width: 100%;
+    margin: 0;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  section {
+    border: none;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  label {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  input {
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
