@@ -1,39 +1,49 @@
 /* DESKTOP CSS */
-
-/* TABLET MEDIUM SCREENS  */
-@media only screen and (max-width: 768px) {
-  .main {
-    display: grid;
-    grid-template-columns: 1fr;
+.container {
+    border: 1px solid black;
   }
-  .image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-right: 1rem;
+  
+  body {
+    display: flex;
   }
-  article {
+  
+  section {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px; 
   }
-}
-
-/* MOBILE SMALL SCREENS  */
-@media only screen and (max-width: 480px) {
-  .main {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-right: 1rem;
-  }
-  article {
+  
+  label {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    align-items: flex-end; 
+    margin-bottom: 50px;
   }
-}
+  
+  label span {
+    margin-bottom: 5px;
+    width: 500px;
+    text-align: left;
+  }
+  
+  input {
+    width: 100%;
+  }
+  
+  /* TABLET MEDIUM SCREENS  */
+  @media only screen and (max-width: 768px) {
+  }
+  
+  /* MOBILE SMALL SCREENS  */
+  @media only screen and (max-width: 480px) {
+  }
+  
+  
+  
